@@ -1,0 +1,602 @@
+/* 
+	Шапка
+	меню
+	Заказ
+	Подвал
+
+*/
+
+
+/* Шапка */
+
+header {
+	background: #fff;
+	padding: 20px 0;
+	
+}
+
+header .container-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .descr {
+	font-family: CeraPro-Bold;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 142.4%;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.02em;
+	color: #202020;
+}
+
+header .link {
+	display: flex;
+
+}
+
+header .link .container-img {
+	background: #FC1F49;
+	border-radius: 2px;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+}
+
+header .link .text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+header .link .text a {
+	font-family: CeraPro-Bold;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.02em;
+	color: #202020;
+	text-decoration: none;
+	margin-bottom: 2px;
+}
+
+header .link .text a:last-child {
+	font-family: CeraPro;
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 0;
+}
+
+header .lang {
+	font-family: CeraPro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.02em;
+	color: #202020;
+	text-decoration: none;
+
+	border-bottom: 1px solid #007E66;
+	padding: 5px 2px;
+}
+
+header .lang + ul li a {
+	font-family: CeraPro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.02em;
+	color: #202020;
+	opacity: 0.6;
+	display: none;
+	transition: .2s;
+	padding: 7px 0 0;
+}
+
+header .lang:hover + ul li a {
+	display: block;
+}
+
+header .lang + ul li a:hover {
+	display: block;
+	opacity: 1;
+}
+
+
+/* Меню */
+
+.nav-menu {
+	width: 100%;
+	padding: 15px 0;
+	background: #007E66;
+	position: sticky;
+	top: 0;
+}
+
+.nav-menu ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.nav-menu ul li {
+	display: inline-block;
+}
+.nav-menu a {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 23px;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
+}
+
+
+/* Banner */
+
+.banner {
+	width: 100%;
+	height: 600px;
+	background: #70C5FC;
+}
+
+
+/* Occupation */
+
+.occupation {
+	padding: 30px 0 110px;
+}
+
+.occupation	.title {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 32px;
+	line-height: 40px;
+	letter-spacing: 0.02em;
+	color: #202020;
+	margin-bottom: 32px;
+}
+
+
+/* Breadcrumb */
+
+ul.breadcrumb {
+  padding: 30px 0;
+  list-style: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-family: CeraPro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 0 10px;
+  color: black;
+  content: "›";
+}
+
+ul.breadcrumb li a {
+  text-decoration: none;
+  font-family: CeraPro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  opacity: 0.7;
+}
+
+ul.breadcrumb li a:hover {
+  opacity: 1;
+}
+
+
+/* services */
+
+.services {
+	padding: 20px 0 50px;
+}
+
+.services .title {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 32px;
+	line-height: 40px;
+	letter-spacing: 0.02em;
+	color: #000000;
+	margin-bottom: 62px;
+}
+
+.services .images {
+	margin-bottom: 50px;
+}
+
+.services .images .container-img {
+	border: 1px solid #007E66;
+	box-sizing: border-box;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.services ul.links {
+	margin-bottom: 50px;
+}
+
+.services ul.links li {
+	margin-bottom: 25px;
+}
+
+.services ul.links a {
+	font-family: CeraPro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 31px;
+	letter-spacing: 0.02em;
+	color: #202020;
+}
+
+.services ul.links img {
+	margin-right: 15px;
+	transition: .2s;
+}
+
+.services ul.links a:hover img {
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+.services .descr {
+	font-family: CeraPro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 133.7%;
+	letter-spacing: 0.02em;
+	color: #000000;
+	margin-bottom: 50px;
+}
+
+.services .descr ul li {
+	margin-bottom: 10px;
+	padding-left: 32px;
+	position: relative;
+}
+
+.services .descr ul li:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 10px;
+	width: 11px;
+	height: 11px;
+	background: #007E66;
+	border-radius: 50%;
+}
+
+.services .grid {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 30px;
+	grid-auto-rows: auto;
+	margin-bottom: 50px;
+}
+
+.services .grid img {
+	width: 100%;
+	transition: .2s ease-out;
+}
+
+.services .grid img:hover {
+	transform: scale(1.05);
+}
+
+.item-1 {
+  background: #b03532;
+  grid-column: 1 / 5;
+  grid-row: 1 / 3;
+}
+.item-2 {
+  grid-column: 5 / 10;
+  grid-row: 1 / 2;
+  background: #33a8a5;
+}
+.item-3 {
+  grid-column: 10 / 13;
+  grid-row: 1 / 2;
+  background: #30997a;
+}
+.item-4 {
+  grid-column: 5 / 8;
+  grid-row: 2 / 3;
+  background: #6a478f;
+}
+.item-5 {
+  grid-column: 8 / 13;
+  grid-row: 2 / 3;
+  background: #da6f2b;
+}
+.item-6 {
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  background: #3d8bb1;
+}
+.item-7 {
+  grid-column: 4 / 9;
+  grid-row: 3 / 4;
+  background: #e03f3f;
+}
+.item-8 {
+  grid-column: 9 / 13;
+  grid-row: 3 / 5;
+  background: #59a627;
+}
+.item-9 {
+  grid-column: 1 / 4;
+  grid-row: 4 / 6;
+  background: #4464a1;
+}
+.item-10 {
+  grid-column: 4 / 7;
+  grid-row: 4 / 5;
+  background: #30997a;
+}
+.item-11 {
+  grid-column: 4 / 7;
+  grid-row: 5 / 6;
+  background: #6a478f;
+}
+.item-12 {
+  grid-column: 7 / 9;
+  grid-row: 4 / 6;
+  background: #da6f2b;
+}
+.item-13 {
+  grid-column: 9 / 13;
+  grid-row: 5 / 6;
+  background: #da6f2b;
+}
+
+
+/* Заказ */
+
+.order {
+	padding: 100px 0;
+	background: #fff;
+}
+
+.order .title {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 32px;
+	line-height: 40px;
+	letter-spacing: 0.02em;
+	color: #000000;
+	margin-bottom: 36px;
+}
+
+.order .link {
+	display: flex;
+	align-items: center;
+	margin-bottom: 36px;
+}
+
+.order .link:last-child {
+	margin-bottom: 0;
+}
+
+.order .link .container-img {
+	margin-right: 15px;
+}
+
+.order .link .text {
+	display: flex;
+	flex-direction: column;
+}
+
+.order .link .descr {
+	font-family: CeraPro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: 0.02em;
+	color: #000000;
+	margin-bottom: 10px;
+}
+
+.order .link a {
+	font-family: CeraPro-Bold;
+	font-style: normal;
+	font-size: 22px;
+	line-height: 28px;
+	letter-spacing: 0.02em;
+	color: #000000;
+	margin-bottom: 5px;
+}
+
+.order .link a:last-child {
+	margin-bottom: 0;
+}
+
+.order .form-descr {
+	font-family: CeraPro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.02em;
+	color: #000000;
+	margin-bottom: 40px;
+}
+
+.order input {
+	width: 100%;
+	font-family: CeraPro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.02em;
+	color: #000000;
+	border: none;
+	padding: 5px 20px;
+	display: block;
+	border-bottom: 1px solid #007E66;
+	margin-bottom: 60px;
+}
+
+.order button {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
+
+	background: #FC1F49;
+	border-radius: 10px;
+	padding: 12px 80px;
+	border: none;
+}
+
+
+/* Подвал */
+
+footer {
+	background: #00382D;
+	padding-top: 100px;
+}
+
+footer li,
+footer a {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
+	margin-bottom: 15px;
+}
+
+footer a:hover {
+	color: #fff;
+}
+
+footer .copyright {
+	font-family: CeraPro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
+	opacity: 0.5;
+	text-align: center;
+	margin: 100px 0 5px;
+	display: block;
+}
+
+/* Popup */
+
+.white-popup-block {
+	background: #FFFFFF;
+	border-radius: 10px;
+	padding: 30px;
+	max-width: 540px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.white-popup-block .container-form {
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+.white-popup-block .title {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 0.02em;
+	color: #121212;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.white-popup-block input,
+.white-popup-block textarea {
+	font-family: CeraPro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.02em;
+	color: #000000;
+	padding: 11px 15px;
+	width: 100%;
+	display: block;
+	margin-bottom: 12px;
+	border: 1px solid #007E66;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.white-popup-block button[type="submit"] {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
+
+	background: #FC1F49;
+	border-radius: 10px;
+	width: 255px;
+	padding: 12px 15px;
+	border: none;
+	margin: 8px auto 0;
+	display: block;
+}
+
+a.popup-modal-dismiss {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 0.02em;
+	color: #FC1F49;
+	text-decoration: none;
+	text-align: center;
+
+	border: 1px solid #FC1F49;
+	box-sizing: border-box;
+	border-radius: 10px;
+	width: 255px;
+	padding: 12px 15px;
+	display: block;
+	margin: 8px auto 0;
+
+}

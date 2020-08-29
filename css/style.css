@@ -236,6 +236,10 @@ ul.breadcrumb li a:hover {
 	overflow: hidden;
 }
 
+.services .images .container-img img {
+	width: 100%;
+}
+
 .services ul.links {
 	margin-bottom: 50px;
 }

@@ -7,11 +7,44 @@
 }
 
 @media (max-width: 768px) {
-
+	.services .grid {
+		grid-gap: 15px;
+	}
+	header .descr {
+		display: none;
+	}
 }
 
 @media (max-width: 520px) {
+	.services .grid {
+		grid-gap: 10px;
+	}
 
+	.services a.btn-white {
+		margin-bottom: 15px;
+	}
+
+	.services .descr {
+		font-size: 16px;
+	}
+
+	footer {
+		padding-top: 60px;
+	}
+
+	footer li, footer a {
+		font-size: 16px;
+	}
+
+	footer ul {
+		margin-bottom: 30px;
+	}
+
+	footer .copyright {
+		font-size: 12px;
+		line-height: 14px;
+		margin: 30px auto 5px;
+	}
 }
 
 @media (max-width: 480px) {

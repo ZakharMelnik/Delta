@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+
+	$('.slider').slick({
+	  infinite: true,
+	  slidesToShow: 4,
+	  slidesToScroll: 4,
+	  arrows: false,
+	  dots: true
+	});
+
 	/*Header menu*/
 
 	$(".header__menu img").click(function(e){

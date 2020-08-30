@@ -162,6 +162,24 @@ header .lang + ul li a:hover {
 	z-index: -1;
 }
 
+.banner .container,
+.banner .row {
+	height: 100%;
+}
+
+.banner .banner-descr {
+	font-family: CeraPro-Bold;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
+	padding: 7px;
+
+	background: rgba(32, 32, 32, 0.8);
+	border-radius: 4px;
+}
+
 .banner .info {
 	display: flex;
 }
@@ -820,14 +838,36 @@ a.popup-modal-dismiss {
 	box-sizing: border-box;
 	border-radius: 8px;
 	padding: 30px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 300px;
+}
+
+#v-pills-tabContent>.tab-pane .text {
+	font-family: CeraPro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 133.7%;
+	letter-spacing: 0.02em;
+	color: #000000;
+	margin-bottom: 40px;
+}
+
+
+#v-pills-tabContent>.tab-pane .text ul li {
+	margin-bottom: 10px;
+	padding-left: 32px;
+	position: relative;
+}
+
+#v-pills-tabContent>.tab-pane .text ul li:before {
+	content: '';
+	display: block;
 	position: absolute;
-    left: 15px;
-    right: 15px;
-    top: 0;
+	left: 0;
+	top: 10px;
+	width: 11px;
+	height: 11px;
+	background: #007E66;
+	border-radius: 50%;
 }
 
 a.btn-green {
@@ -892,4 +932,96 @@ a.btn-green:hover img {
 	line-height: 25px;
 	letter-spacing: 0.02em;
 	color: #FFFFFF;
+}
+
+.work {
+	padding: 70px 0 90px;
+}
+
+.work .title {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 32px;
+	line-height: 155.3%;
+	letter-spacing: 0.02em;
+	color: #202020;
+	margin-bottom: 32px;
+}
+
+.slide {
+	width: 255px;
+	height: 400px;
+	background: #ddd;
+	border-radius: 6px;
+	position: relative;
+	transition: .2s ease-out;
+	margin-bottom: 30px;
+}
+
+.slide a {
+	position: absolute;
+	bottom: 0;
+	border-radius: 6px;
+	z-index: 1;
+}
+
+.slide:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: block;
+	background: rgba(0, 126, 102, 0.8);
+	border-radius: 5px;
+	z-index: 0;
+	opacity: 0;
+	transition: .2s ease-out;
+}
+
+.slide:hover:after {
+	opacity: 1;
+}
+
+.slide:hover .text {
+	opacity: 1;
+}
+
+.slide .text {
+	position: absolute;
+	top: 0;
+	text-align: center;
+	transition: .2s ease-out;
+
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 22px;
+	line-height: 135%;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
+	opacity: 0;
+	z-index: 1;
+	padding: 60px 15px 30px;
+}
+
+.slide .text .location {
+	font-family: CeraPro;
+	font-size: 18px;
+	margin-bottom: 35px;
+}
+
+.slide .text .descr {
+	font-family: CeraPro;
+	font-size: 18px;
+	text-align: left;
+}
+
+.slick-dots li button:before {
+	background: #007E66;
+	opacity: 0.4;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	content: '';
 }

@@ -143,7 +143,53 @@ header .lang + ul li a:hover {
 .banner {
 	width: 100%;
 	height: 600px;
-	background: #70C5FC;
+	background: url(../img/main/banner1.jpg) no-repeat center center;
+	background-size: 100%;
+	position: relative;
+	z-index: 1;
+	padding: 40px 0 100px;
+}
+
+.banner:after {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.4);
+	z-index: -1;
+}
+
+.banner .info {
+	display: flex;
+}
+
+.banner .info .block {
+	text-align: center;
+}
+
+.banner .info .block:not(:last-of-type) {
+	margin-right: 35px;
+}
+
+.banner .info .block .num {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 30px;
+	line-height: 38px;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
+}
+
+.banner .info .block .descr {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
 }
 
 
@@ -382,6 +428,97 @@ ul.breadcrumb li a:hover {
 }
 
 
+/* Клиенты */
+
+.clients {
+	padding: 100px 0;
+}
+
+.clients .title {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 32px;
+	line-height: 135%;
+	letter-spacing: 0.02em;
+	color: #202020;
+	margin-bottom: 50px;
+}
+
+.clients .flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.clients .flex img {
+	width: 100%;
+	max-width: 100%;
+}
+
+
+/*Отзывы*/
+
+.reviews {
+	padding: 30px 0;	
+}
+
+.reviews .title {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 32px;
+	line-height: 40px;
+	letter-spacing: 0.02em;
+	color: #000000;
+	margin-bottom: 40px;
+}
+
+.reviews .client-info {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.reviews .client-info .container-img {
+	width: 92px;
+	height: 92px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.reviews .client-info .name {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 23px;
+	letter-spacing: 0.02em;
+	color: #000000;
+	margin-bottom: 2px;
+}
+
+.reviews .client-info .specialty {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.02em;
+	color: #000000;
+	opacity: 0.7;
+	min-height: 36px;
+}
+
+.reviews .review {
+	font-family: CeraPro;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.02em;
+	color: #000000;
+	margin-bottom: 60px;
+}
+
+
 /* Заказ */
 
 .order {
@@ -602,5 +739,157 @@ a.popup-modal-dismiss {
 	padding: 12px 15px;
 	display: block;
 	margin: 8px auto 0;
+}
 
+
+
+.nav-tabs .nav-link {
+	font-family: CeraPro-Bold;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #000000;
+	opacity: 0.6;
+}
+
+.nav-tabs .nav-item:not(:last-of-type) {
+	margin-right: 25px;
+}	
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	color: #FC1F49;
+	opacity: 1;
+	border: 0;
+	border-bottom: 4px solid #FC1F49;
+	border-radius: 1px;
+}
+
+.nav-tabs {
+	border-bottom: 1px solid #007E66;
+	margin-bottom: 50px;
+}
+
+.nav-pills .nav-link {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 25px;
+	line-height: 31px;
+	letter-spacing: 0.02em;
+	color: #000000;
+	opacity: 0.6;
+}
+
+.nav-pills .nav-link img {
+    margin-right: 15px;
+    transition: .2s;
+}
+
+.nav-pills .nav-link:hover {
+	text-decoration: underline;
+}
+
+.nav-pills .nav-link:hover img {
+	margin-left: 5px;
+    margin-right: 10px;
+}
+
+.nav-pills .nav-link.active img,
+.nav-pills .show>.nav-link img {
+	margin-left: 0;
+	margin-right: 15px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 25px;
+	line-height: 31px;
+	letter-spacing: 0.02em;
+	color: #FC1F49;
+	opacity: 1;
+	background: none;
+	text-decoration: none;
+}
+
+#v-pills-tabContent>.tab-pane {
+	border: 1px solid #007E66;
+	box-sizing: border-box;
+	border-radius: 8px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 300px;
+	position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 0;
+}
+
+a.btn-green {
+	font-family: CeraPro-Bold;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 0.02em;
+	color: #007E66;
+}
+
+a.btn-green img {
+	transition: .2s ease-out;
+}
+
+a.btn-green:hover img {
+	margin-left: 10px;
+}
+
+.infographics {
+	padding: 50px 0 60px;
+	background: url(../img/main/infographics.jpg) no-repeat center -80px;
+	background-size: 100%;
+}
+
+.infographics .title {
+	font-family: CeraPro-Bold;
+	font-style: normal;
+	font-size: 32px;
+	line-height: 145.3%;
+	letter-spacing: 0.02em;
+	color: #000000;
+	margin-bottom: 190px;
+}
+
+.infographics a.btn {
+	margin-bottom: 220px;
+}
+
+.infographics .block {
+	background: rgba(0, 126, 102, 0.8);
+	border-radius: 10px;
+	width: 100%;
+	padding: 7px;
+	text-align: center;
+}
+
+.infographics .block .num {
+	font-family: CeraPro-Medium;
+	font-style: normal;
+	font-size: 32px;
+	line-height: 40px;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
+}
+
+.infographics .block .descr {
+	font-family: CeraPro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
 }

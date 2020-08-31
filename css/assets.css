@@ -103,10 +103,18 @@ a.btn-white {
 	text-align: center;
 }
 
+button[type="submit"] {
+	transition: .2s ease-out;
+}
 
 a.btn:hover,
 button:hover {
 	color: #fff;
+}
+
+a.btn:hover,
+button[type="submit"]:hover  {
+	box-shadow: 0px 5px 15px -5px #FC1F49;
 }
 
 

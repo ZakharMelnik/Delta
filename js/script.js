@@ -1,13 +1,17 @@
 $(document).ready(function() {
 
-	$(".banner .arrow-down").click(function(){
-		$(".banner").css('background-image', 'url(img/main/banner2.jpg)');
-		$(".banner-descr").text('Контражурные логотипы для крупных компаний');
-		
-	});
-
 	$(".banner .arrow-up").click(function(){
 		$(".banner").css('background-image', 'url(img/main/banner1.jpg)');
+		$(".banner-descr").text('Комплексное оформление ТРЦ рекламными конструкциями');
+	});
+
+	$(".banner .arrow-middle").click(function(){
+		$(".banner").css('background-image', 'url(img/main/banner2.jpg)');
+		$(".banner-descr").text('Контражурные логотипы для крупных компаний');
+	});
+
+	$(".banner .arrow-down").click(function(){
+		$(".banner").css('background-image', 'url(img/main/banner3.jpg)');
 		$(".banner-descr").text('Комплексное оформление ТРЦ рекламными конструкциями');
 	});
 
@@ -78,6 +82,20 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+
+	var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(' ');
+	$(".banner .num .animate").each(function() {
+		var tcount = $(this).data("count");
+		$(this).animateNumber({ number: tcount,
+			easing: 'easeInQuad',
+			numberStep: comma_separator_number_step},
+			3000);
+	});
+
+	new TypeIt(".banner .banner-descr", {
+	  speed: 25
+	}).go();
 
 });
 

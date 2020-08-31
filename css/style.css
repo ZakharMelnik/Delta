@@ -48,6 +48,17 @@ header .link .container-img {
 	margin-right: 10px;
 }
 
+header .link .container-img img {
+	animation: turns 0.7s ease-out infinite;
+}
+
+@keyframes turns {
+	0% { transform: rotate(0deg); }
+	50% { transform: rotate(-15deg); }
+	100% { transform: rotate(0deg); }
+
+}
+
 header .link .text {
 	display: flex;
 	flex-direction: column;
@@ -63,6 +74,7 @@ header .link .text a {
 	color: #202020;
 	text-decoration: none;
 	margin-bottom: 2px;
+	transition: .2s ease-out;
 }
 
 header .link .text a:last-child {
@@ -70,6 +82,10 @@ header .link .text a:last-child {
 	font-size: 14px;
 	line-height: 18px;
 	margin-bottom: 0;
+}
+
+header .link .text a:hover {
+	text-decoration: underline;
 }
 
 header .lang {
@@ -250,6 +266,7 @@ header .lang + ul li a:hover {
 	line-height: 38px;
 	letter-spacing: 0.02em;
 	color: #FFFFFF;
+	display: flex;
 }
 
 .banner .info .block .descr {
@@ -260,6 +277,17 @@ header .lang + ul li a:hover {
 	letter-spacing: 0.02em;
 	color: #FFFFFF;
 }
+.banner a.btn {
+	animation: zooming 1s ease-out infinite;
+}
+
+@keyframes zooming {
+0% { transform: scale(1);}   
+50% { transform: scale(1.05);}
+100% { transform: scale(1);}
+}
+
+
 
 
 /* Occupation */
@@ -623,6 +651,10 @@ ul.breadcrumb li a:hover {
 	margin-right: 15px;
 }
 
+.order .link .container-img img {
+	animation: turns 0.7s ease-out infinite;
+}
+
 .order .link .text {
 	display: flex;
 	flex-direction: column;
@@ -944,7 +976,7 @@ a.btn-green:hover img {
 
 .infographics {
 	padding: 50px 0 60px;
-	background: url(../img/main/infographics.jpg) no-repeat center -80px;
+	background: url(../img/main/infographics.jpg) no-repeat center 0;
 	background-size: cover;
 }
 
@@ -1011,6 +1043,7 @@ a.btn-green:hover img {
 	position: relative;
 	transition: .2s ease-out;
 	margin-bottom: 30px;
+	overflow: hidden;
 }
 
 .slick-slide img {
@@ -1045,6 +1078,14 @@ a.btn-green:hover img {
 
 .slide:hover .text {
 	opacity: 1;
+}
+
+.slide img {
+	transition: .2s ease-out;
+}
+
+.slide:hover img {
+	transform: scale(1.1);
 }
 
 .slide .text {
@@ -1094,7 +1135,7 @@ a.btn-green:hover img {
  opacity: 0;
  -webkit-transition: opacity .5s;
  transition: opacity: .5s;
- z-index: 99
+ z-index: 999
 }
 
 #menu.show ~ .milk-shadow {height: 100%; opacity: .3;}
@@ -1159,6 +1200,7 @@ a.btn-green:hover img {
 	background-position: center center;
 	background-size: cover;
 	padding: 30px 0;
+	background-color: #000;
 }
 
 .optical ul.tabs {

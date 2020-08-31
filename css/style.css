@@ -173,13 +173,14 @@ header .lang + ul li a:hover {
 
 .banner .arrows .line {
 	width: 2px;
-	height: 140px;
+	height: 60px;
 	background: #FC1F49;
 	display: block;
 }
 
 .banner .arrows .arrow-up,
-.banner .arrows .arrow-down {
+.banner .arrows .arrow-down,
+.banner .arrows .arrow-middle {
 	font-family: CeraPro-Medium;
 	font-style: normal;
 	font-size: 20px;
@@ -190,6 +191,10 @@ header .lang + ul li a:hover {
 	flex-direction: column;
 	cursor: pointer;
 	padding: 5px;
+}
+
+.banner .arrows .arrow-middle {
+	margin: 10px 0;
 }
 
 .banner .arrows .arrow-up img,

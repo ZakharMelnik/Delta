@@ -1,5 +1,7 @@
 @media (max-width: 1200px) {
-
+	.banner .info .block .descr {
+		font-size: 18px;
+	}
 }
 
 @media (max-width: 992px) {
@@ -7,15 +9,77 @@
 }
 
 @media (max-width: 768px) {
+
+	.infographics .title {
+		font-size: 22px;
+	}
+
 	.services .grid {
 		grid-gap: 15px;
 	}
 	header .descr {
 		display: none;
 	}
+
+	.infographics .block {
+		margin-bottom: 15px;
+	}
+
+	.tab-pane .nav {
+		margin-bottom: 40px;
+	}
 }
 
 @media (max-width: 520px) {
+
+
+
+	.infographics .title {
+		font-size: 18px;
+		margin-bottom: 60px;
+	}
+
+	.infographics a.btn {
+	    margin-bottom: 60px;
+	}
+
+	.banner .info {
+		flex-direction: column;
+	}
+
+	.banner .info .block {
+		margin-bottom: 20px;
+	}
+
+	.banner .info .block:not(:last-of-type) {
+		margin-right: 0;
+	}
+
+	header {
+		padding: 7px 0;
+	}
+
+	.header-logo img {
+		width: 50px;
+	}
+
+	header .link .text {
+		display: none;
+	}
+
+	.banner .banner-descr {
+		font-size: 10px;
+		line-height: 12px;
+	}
+
+	.nav-menu {
+		display: none;
+	}
+
+	#v-pills-tabContent>.tab-pane {
+		padding: 15px;
+	}
+
 	.services .grid {
 		grid-gap: 10px;
 	}
@@ -44,6 +108,27 @@
 		font-size: 12px;
 		line-height: 14px;
 		margin: 30px auto 5px;
+	}
+
+	.clients .title {
+		font-size: 18px;
+	}
+
+	.clients,
+	.order,
+	.work {
+		padding: 50px 0;
+	}
+
+	.order .form-descr {
+		margin-top: 40px;
+	}
+	.order button {
+		width: 100%;
+	}
+
+	.clients .flex .container-img:not(:last-of-type) {
+		margin-right: 15px;
 	}
 }
 

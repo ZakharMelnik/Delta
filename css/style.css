@@ -144,7 +144,7 @@ header .lang + ul li a:hover {
 	width: 100%;
 	height: 600px;
 	background: url(../img/main/banner1.jpg) no-repeat center center;
-	background-size: 100%;
+	background-size: cover;
 	position: relative;
 	z-index: 1;
 	padding: 40px 0 100px;
@@ -890,7 +890,7 @@ a.btn-green:hover img {
 .infographics {
 	padding: 50px 0 60px;
 	background: url(../img/main/infographics.jpg) no-repeat center -80px;
-	background-size: 100%;
+	background-size: cover;
 }
 
 .infographics .title {
